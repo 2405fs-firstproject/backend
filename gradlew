@@ -36,6 +36,13 @@
 #           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
 #         * compound commands having a testable exit status, especially «case»;
 #         * various built-in commands including «command», «set», and «ulimit».
+<<<<<<< Updated upstream
+=======
+#         * expansions ?$var?, ?${var}?, ?${var:-default}?, ?${var+SET}?,
+#           ?${var#prefix}?, ?${var%suffix}?, and ?$( cmd )?;
+#         * compound commands having a testable exit status, especially ?case?;
+#         * various built-in commands including ?command?, ?set?, and ?ulimit?.
+>>>>>>> Stashed changes
 #
 #   Important for patching:
 #
@@ -55,7 +62,10 @@
 #       Darwin, MinGW, and NonStop.
 #
 #   (3) This script is generated from the Groovy template
+<<<<<<< Updated upstream
 #       https://github.com/gradle/gradle/blob/HEAD/platforms/jvm/plugins-application/src/main/resources/org/gradle/api/internal/plugins/unixStartScript.txt
+=======
+>>>>>>> Stashed changes
 #       within the Gradle project.
 #
 #       You can find Gradle at https://github.com/gradle/gradle/.
@@ -80,11 +90,15 @@ do
     esac
 done
 
+<<<<<<< Updated upstream
 # This is normally unused
 # shellcheck disable=SC2034
 APP_BASE_NAME=${0##*/}
 # Discard cd standard output in case $CDPATH is set (https://github.com/gradle/gradle/issues/25036)
 APP_HOME=$( cd "${APP_HOME:-./}" > /dev/null && pwd -P ) || exit
+=======
+APP_BASE_NAME=${0##*/}
+>>>>>>> Stashed changes
 
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD=maximum
@@ -131,14 +145,20 @@ location of your Java installation."
     fi
 else
     JAVACMD=java
+<<<<<<< Updated upstream
     if ! command -v java >/dev/null 2>&1
     then
         die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+=======
+>>>>>>> Stashed changes
 
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
     fi
+<<<<<<< Updated upstream
 fi
+=======
+>>>>>>> Stashed changes
 
 # Increase the maximum file descriptors if we can.
 if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
@@ -198,6 +218,7 @@ if "$cygwin" || "$msys" ; then
     done
 fi
 
+<<<<<<< Updated upstream
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
@@ -207,6 +228,8 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 #     and any embedded shellness will be escaped.
 #   * For example: A user cannot expect ${Hostname} to be expanded, as it is an environment variable and will be
 #     treated as '${Hostname}' itself on the command line.
+=======
+>>>>>>> Stashed changes
 
 set -- \
         "-Dorg.gradle.appname=$APP_BASE_NAME" \

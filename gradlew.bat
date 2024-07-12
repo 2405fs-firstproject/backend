@@ -41,8 +41,19 @@ if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
+<<<<<<< Updated upstream
 if %ERRORLEVEL% equ 0 goto execute
 
+=======
+if "%ERRORLEVEL%" == "0" goto execute
+if %ERRORLEVEL% equ 0 goto execute
+
+echo.
+echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+echo.
+echo Please set the JAVA_HOME variable in your environment to match the
+echo location of your Java installation.
+>>>>>>> Stashed changes
 echo. 1>&2
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
 echo. 1>&2
@@ -62,6 +73,14 @@ echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
 echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
+<<<<<<< Updated upstream
+=======
+echo.
+echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
+echo.
+echo Please set the JAVA_HOME variable in your environment to match the
+echo location of your Java installation.
+>>>>>>> Stashed changes
 
 goto fail
 
@@ -77,10 +96,19 @@ set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
+<<<<<<< Updated upstream
+=======
+if "%ERRORLEVEL%"=="0" goto mainEnd
+>>>>>>> Stashed changes
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
+<<<<<<< Updated upstream
+=======
+if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
+exit /b 1
+>>>>>>> Stashed changes
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
