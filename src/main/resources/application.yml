@@ -7,10 +7,7 @@ spring:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
   hibernate:
     ddl-auto: update
     naming:
@@ -19,13 +16,6 @@ spring:
     hibernate:
       format_sql: true
       default_batch_fetch_size: 1000 #최적화 옵션
-<<<<<<< Updated upstream
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/K_PASS?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: 12341234
-=======
 
   datasource:
     primary:
@@ -39,7 +29,6 @@ spring:
       username: member
       password: member240712
       driver-class-name: com.mysql.cj.jdbc.Driver
->>>>>>> Stashed changes
 
   org:
     hibernate:
