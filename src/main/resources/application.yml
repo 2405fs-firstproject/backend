@@ -1,0 +1,29 @@
+server:
+  port: 8086
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  hibernate:
+    ddl-auto: update
+    naming:
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  properties:
+    hibernate:
+      format_sql: true
+      default_batch_fetch_size: 1000 #최적화 옵션
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/K_PASS?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 12341234
+
+  org:
+    hibernate:
+      type :
+        descriptor:
+          sql: trace
+
